@@ -1,10 +1,21 @@
-.banner-wrapper{
-  max-width:600px;
-  margin:20px auto;
+.btn{
+  display:inline-block;
+  margin:15px;
+  padding:15px 30px;
+  font-size:18px;
+  color:#ffffff;
+  text-decoration:none;
+  border-radius:14px;
+
+  background:linear-gradient(135deg,#1b263b,#1f3a5f);
+  border:1px solid rgba(255,255,255,0.12);
+  box-shadow:0 10px 25px rgba(0,0,0,0.30);
+
+  transition:all 0.25s ease;
 }
 
-.banner{
-  width:30%;
-  border-radius:14px;
-  display:block;
+.btn:hover{
+  background:linear-gradient(135deg,#00b4d8,#0077b6);
+  transform:translateY(-3px);
+  box-shadow:0 14px 30px rgba(0,180,216,0.25);
 }
