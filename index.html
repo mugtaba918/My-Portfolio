@@ -2,12 +2,7 @@
 <html>
 <head>
   <title>Mugtaba Awad | Data Science Portfolio</title>
-
   <style>
-    html{
-      scroll-behavior: smooth; /* 🔥 نزول ناعم */
-    }
-
     body{
       margin:0;
       text-align:center;
@@ -34,6 +29,8 @@
       text-decoration:none;
       border-radius:8px;
       transition:0.3s;
+      border:none;
+      cursor:pointer;
     }
 
     .btn:hover{
@@ -41,33 +38,72 @@
       transform:scale(1.05);
     }
 
-    .projects-wrap{
-      margin-top:80px; /* مسافة عشان يكون واضح عند النزول */
+    /* ✅ Dropdown wrapper */
+    .dropdown{
+      display:inline-block;
+      position:relative;
+      margin:15px;
     }
 
-    .project-link{
-      display:inline-block;
-      margin:8px;
-      padding:10px 18px;
+    /* ✅ نفس شكل زر btn لكن بدون margin داخلي */
+    .dropdown .btn{
+      margin:0;
+    }
+
+    /* ✅ Dropdown menu (hidden by default) */
+    .dropdown-menu{
+      position:absolute;
+      top:60px;
+      left:50%;
+      transform:translateX(-50%);
+      min-width:220px;
+      background:#101d31;
       border:1px solid #00b4d8;
-      border-radius:8px;
-      color:#00b4d8;
+      border-radius:12px;
+      padding:10px;
+      display:none;
+      z-index:999;
+      box-shadow:0 10px 25px rgba(0,0,0,0.35);
+    }
+
+    .dropdown-menu.show{
+      display:block;
+      animation:fadeDown 0.2s ease;
+    }
+
+    @keyframes fadeDown{
+      from{opacity:0; transform:translateX(-50%) translateY(-8px);}
+      to{opacity:1; transform:translateX(-50%) translateY(0);}
+    }
+
+    /* ✅ items */
+    .drop-item{
+      display:block;
+      padding:12px 14px;
+      margin:6px 0;
       text-decoration:none;
-      transition:0.3s;
+      color:white;
+      background:#1b263b;
+      border-radius:10px;
+      transition:0.2s;
       font-size:16px;
     }
 
-    .project-link:hover{
+    .drop-item:hover{
       background:#00b4d8;
       color:#0d1b2a;
-      transform:scale(1.03);
+      transform:scale(1.02);
+    }
+
+    /* CV buttons layout (اختياري) */
+    .cv-buttons{
+      margin-top:5px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- ✅ Banner -->
   <img src="assets/img/banner1.png" alt="Portfolio Banner" class="banner">
 
   <h1>Welcome to My Data Science Portfolio</h1>
@@ -76,28 +112,47 @@
   <a href="about.html" class="btn">About</a>
   <a href="contact.html" class="btn">Contact</a>
 
-  <!-- 🔥 زر Projects ينزل للقسم -->
-  <a href="#projects" class="btn">Projects</a>
+  <!-- ✅ Projects Dropdown -->
+  <div class="dropdown" id="projectsDropdown">
+    <button class="btn" id="projectsBtn" type="button">Projects ▾</button>
+
+    <div class="dropdown-menu" id="projectsMenu">
+      <a href="projects/project1.html" class="drop-item">Project 1</a>
+      <a href="projects/project2.html" class="drop-item">Project 2</a>
+      <a href="projects/project3.html" class="drop-item">Project 3</a>
+      <a href="projects/project4.html" class="drop-item">Project 4</a>
+      <!-- إذا عندك Dashboard -->
+      <!-- <a href="projects/dashboard.html" class="drop-item">Dashboard</a> -->
+    </div>
+  </div>
 
   <!-- ✅ Resume Buttons -->
   <div class="cv-buttons">
-      <a class="btn" href="assets/img/Mugtaba_Awad_Resume.pdf" target="_blank">
-        View My CV
-      </a>
-
-      <a class="btn" href="assets/img/Mugtaba_Awad_Resume.pdf" download>
-        Download My CV
-      </a>
+    <a class="btn" href="assets/img/Mugtaba_Awad_Resume.pdf" target="_blank">View My CV</a>
+    <a class="btn" href="assets/img/Mugtaba_Awad_Resume.pdf" download>Download My CV</a>
   </div>
 
-  <!-- ✅ Projects Section -->
-  <div class="projects-wrap" id="projects">
-    <h2>Projects</h2>
-    <a href="projects/project1.html" class="project-link">Project 1</a>
-    <a href="projects/project2.html" class="project-link">Project 2</a>
-    <a href="projects/project3.html" class="project-link">Project 3</a>
-    <a href="projects/project4.html" class="project-link">Project 4</a>
-  </div>
+  <script>
+    const dropdown = document.getElementById("projectsDropdown");
+    const btn = document.getElementById("projectsBtn");
+    const menu = document.getElementById("projectsMenu");
+
+    // فتح/إغلاق عند الضغط على Projects
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      menu.classList.toggle("show");
+    });
+
+    // إغلاق عند الضغط خارج القائمة
+    document.addEventListener("click", () => {
+      menu.classList.remove("show");
+    });
+
+    // منع الإغلاق عند الضغط داخل القائمة
+    menu.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
+  </script>
 
 </body>
 </html>
