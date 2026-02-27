@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Project 1 | Mugtaba Awad</title>
+<title>Clinical Data Remediation | Mugtaba Awad</title>
 
 <style>
   body{
@@ -113,19 +113,11 @@
     flex-wrap:wrap;
     justify-content:center;
   }
-
-  .link{
-    color:#00b4d8;
-    text-decoration:none;
-    font-size:16px;
-  }
-  .link:hover{ text-decoration:underline; }
 </style>
 </head>
 
 <body>
 
-<!-- ✅ Banner (because this file is inside /projects, we use ../ ) -->
 <img src="../assets/img/banner1.png" alt="Portfolio Banner" class="banner">
 
 <div class="container">
@@ -140,80 +132,72 @@
   </div>
 
   <div class="card">
-    <h1>High Volume Sentiment Engineering</h1>
-    <h3>Modular NLP Pipeline for Large-Scale Sentiment Analysis</h3>
+    <h1>Clinical Data Remediation & Visualization</h1>
+    <h3>Data Quality Engineering for Stakeholder Reporting</h3>
 
     <h2>📌 Project Overview</h2>
     <p>
-      This project designed and implemented a modular, automated NLP pipeline to remediate and model
-      50,000 decentralized IMDb movie reviews. The objective was to transform noisy raw text into a
-      high-fidelity “Golden Asset” suitable for high-stakes sentiment modeling and stakeholder reporting.
+      Clinical datasets often contain missing values, placeholder symbols, and coded identifiers that reduce 
+      trust in reporting and decision-making. This project focused on cleaning and remediating 
+      diabetes-related clinical records to improve interpretability, consistency, and stakeholder confidence.
     </p>
 
     <h2>🚨 Business Problem</h2>
-    <p>
-      Manual review of 50,000 reviews resulted in inconsistent sentiment insights, linguistic noise, and feature explosion.
-      The team hypothesized that an automated modular pipeline would outperform manual cleaning by
-      preserving semantic signals while eliminating structural noise.
-    </p>
+    <ul>
+      <li>High missingness in key clinical markers (e.g., A1C levels)</li>
+      <li>Administrative placeholders mixed with valid values</li>
+      <li>Coded identifiers without readable mappings</li>
+      <li>Inconsistent or misleading distributions across variables</li>
+    </ul>
 
     <h2>🛠 Tools & Technologies</h2>
     <div class="tags">
       <span class="tag">Python</span>
       <span class="tag">Pandas</span>
-      <span class="tag">NLTK</span>
-      <span class="tag">Scikit-learn</span>
-      <span class="tag">TF-IDF (Bi-grams)</span>
-      <span class="tag">GitHub SDLC</span>
-      <span class="tag">Matplotlib</span>
-      <span class="tag">WordCloud</span>
+      <span class="tag">SQL</span>
+      <span class="tag">Power BI</span>
+      <span class="tag">EDA</span>
+      <span class="tag">Data Validation</span>
     </div>
 
-    <h2>⚙️ Technical Implementation</h2>
+    <h2>⚙️ Technical Approach</h2>
 
-    <h2>1️⃣ Ingestion & Forensic Audit</h2>
+    <h2>1️⃣ Data Standardization</h2>
     <p>
-      Automated ingestion of 50,000 .txt files using Python (os & glob).
-      Binary labels engineered programmatically to preserve 100% class integrity.
-      Dataset consolidated into a master CSV serving as the single Source of Truth.
+      Identified and standardized missing values, replaced placeholder symbols,
+      and verified column data types to ensure consistency.
     </p>
 
-    <h2>2️⃣ Linguistic Distillation</h2>
+    <h2>2️⃣ Code Mapping & Transformation</h2>
     <p>
-      Implemented precision-based stop-word filtering using NLTK.
-      Preserved negation signals such as “not” and “never” to prevent ethical misclassification.
-      Stripped HTML artifacts and non-semantic placeholders.
+      Mapped coded identifiers into human-readable categories,
+      improving interpretability for non-technical stakeholders.
     </p>
 
-    <h2>3️⃣ Feature Engineering & Modeling</h2>
+    <h2>3️⃣ Validation & Audit</h2>
     <p>
-      Applied TF-IDF vectorization with bi-grams (ngram_range = (1,2)).
-      Capped vocabulary at 20,000 tokens to prevent feature explosion.
-      Built Logistic Regression and Naïve Bayes classifiers.
+      Performed before/after distribution comparisons and quality checks
+      to confirm remediation did not distort clinical meaning.
     </p>
 
-    <h2>📊 Visual Validation</h2>
+    <h2>4️⃣ Visualization & Reporting</h2>
+    <p>
+      Developed stakeholder-friendly dashboards and summary visuals
+      to clearly communicate improvements in data quality.
+    </p>
+
+    <h2>📊 Results & Impact</h2>
     <ul>
-      <li>Class Balance Audit (25,000 Positive / 25,000 Negative)</li>
-      <li>Before/After Word Count Histograms</li>
-      <li>Semantic Word Clouds (Noise Removal Confirmation)</li>
-      <li>Confusion Matrix (Model Precision Validation)</li>
+      <li>Improved interpretability of key clinical markers</li>
+      <li>Reduced reporting errors caused by coded placeholders</li>
+      <li>Increased stakeholder confidence in dashboards</li>
+      <li>Delivered cleaner, decision-ready clinical dataset</li>
     </ul>
 
-    <h2>📈 Results & Impact</h2>
-    <ul>
-      <li>Reduced feature space from 100,000+ noisy tokens to 20,000 high-intensity markers</li>
-      <li>Preserved critical sentiment drivers (e.g., “not good”)</li>
-      <li>Improved predictive stability and clarity</li>
-      <li>Maintained perfect 50/50 class balance to eliminate bias</li>
-      <li>Delivered a scalable, production-ready NLP pipeline</li>
-    </ul>
-
-    <h2>🎯 My Role – Project Manager</h2>
+    <h2>🎯 My Contribution</h2>
     <p>
-      Managed the Software Development Life Cycle (SDLC) via GitHub.
-      Enforced peer review standards on distillation logic.
-      Oversaw ethical validation and ensured reproducibility across modules.
+      Led validation checks, ensured data consistency standards,
+      and supported stakeholder-ready visualization outputs.
     </p>
 
     <!-- ✅ Footer Buttons -->
