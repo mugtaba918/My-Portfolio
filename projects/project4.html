@@ -1,82 +1,214 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>SQL Data Analysis & Insights | Mugtaba Awad</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SQL Data Analysis & Insights | Mugtaba Awad</title>
+
+<style>
+  body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#0f2027;
+    color:#e9eef5;
+  }
+
+  .banner{
+    width:100%;
+    max-width:1200px;
+    display:block;
+    margin:20px auto;
+    border-radius:14px;
+  }
+
+  .container{
+    max-width:980px;
+    margin:0 auto;
+    padding: 18px 18px 40px;
+  }
+
+  .nav{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin: 8px 0 18px;
+  }
+
+  .btn{
+    background:#1b263b;
+    color:white;
+    text-decoration:none;
+    padding:10px 14px;
+    border-radius:10px;
+    border:1px solid #2a3750;
+    display:inline-block;
+    transition:0.25s;
+  }
+
+  .btn:hover{
+    background:#00b4d8;
+    color:#0f2027;
+    transform:translateY(-1px);
+  }
+
+  .card{
+    background:#131824;
+    border:1px solid #22304a;
+    border-radius:16px;
+    padding:18px;
+    margin-top:14px;
+  }
+
+  h1{
+    margin:0 0 6px;
+    font-size:28px;
+    text-align:center;
+  }
+
+  h3{
+    margin:0 0 12px;
+    text-align:center;
+    color:#cdd7e6;
+    font-weight: normal;
+  }
+
+  h2{
+    margin:18px 0 10px;
+    font-size:18px;
+  }
+
+  p{
+    line-height:1.7;
+    margin:10px 0;
+    color:#cdd7e6;
+  }
+
+  ul{
+    margin: 8px 0 0 18px;
+    color:#cdd7e6;
+    line-height:1.7;
+  }
+
+  .tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:10px;
+  }
+
+  .tag{
+    font-size:12px;
+    padding:6px 10px;
+    border-radius:999px;
+    background:#1b263b;
+    border:1px solid #2a3750;
+    color:#cdd7e6;
+  }
+
+  .footer-actions{
+    margin-top:18px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+</style>
 </head>
 
-<body style="font-family:Arial; background:#0f2027; color:white; padding:40px;">
+<body>
 
-<h1 style="text-align:center;">SQL Data Analysis & Insights</h1>
-<h3 style="text-align:center;">Relational Data Exploration & KPI Engineering</h3>
+<!-- ✅ Banner -->
+<img src="../assets/img/banner1.png" alt="Portfolio Banner" class="banner">
 
-<hr>
+<div class="container">
 
-<h2>📌 Project Overview</h2>
-<p>
-This project leveraged SQL to explore relational datasets, combine multiple tables,
-and generate decision-support metrics. The focus was on transforming raw operational
-data into structured insights for business stakeholders.
-</p>
+  <!-- ✅ Navigation -->
+  <div class="nav">
+    <a class="btn" href="../index.html">Home</a>
+    <a class="btn" href="../projects.html">Projects</a>
+    <a class="btn" href="../about.html">About</a>
+    <a class="btn" href="../contact.html">Contact</a>
+    <a class="btn" href="../assets/Mugtaba_Awad_Resume.pdf" target="_blank">Resume (PDF)</a>
+  </div>
 
-<h2>🚨 Business Problem</h2>
-<ul>
-<li>Operational data stored across multiple relational tables</li>
-<li>Difficulty generating consistent KPIs without structured joins</li>
-<li>Time-consuming manual reporting processes</li>
-<li>Lack of standardized metric definitions</li>
-</ul>
+  <div class="card">
+    <h1>SQL Data Analysis & Insights</h1>
+    <h3>Relational Data Exploration & KPI Engineering</h3>
 
-<h2>🛠 Tools & Technologies</h2>
-<ul>
-<li>SQL</li>
-<li>Relational Databases</li>
-<li>Joins & Aggregations</li>
-<li>Subqueries</li>
-<li>Query Optimization</li>
-</ul>
+    <h2>📌 Project Overview</h2>
+    <p>
+      This project leveraged SQL to explore relational datasets, combine multiple tables,
+      and generate decision-support metrics. The focus was on transforming raw operational
+      data into structured insights for business stakeholders.
+    </p>
 
-<h2>⚙️ Technical Approach</h2>
+    <h2>🚨 Business Problem</h2>
+    <ul>
+      <li>Operational data stored across multiple relational tables</li>
+      <li>Difficulty generating consistent KPIs without structured joins</li>
+      <li>Time-consuming manual reporting processes</li>
+      <li>Lack of standardized metric definitions</li>
+    </ul>
 
-<h3>1️⃣ Data Integration</h3>
-<p>
-Joined multiple relational tables using INNER JOIN, LEFT JOIN,
-and subqueries to create meaningful analytical views.
-</p>
+    <h2>🛠 Tools & Technologies</h2>
+    <div class="tags">
+      <span class="tag">SQL</span>
+      <span class="tag">Relational Databases</span>
+      <span class="tag">Joins</span>
+      <span class="tag">Aggregations</span>
+      <span class="tag">Subqueries</span>
+      <span class="tag">Query Optimization</span>
+    </div>
 
-<h3>2️⃣ KPI Computation</h3>
-<p>
-Applied aggregation functions (SUM, COUNT, AVG, GROUP BY)
-to compute key performance indicators and business summaries.
-</p>
+    <h2>⚙️ Technical Approach</h2>
 
-<h3>3️⃣ Anomaly & Trend Analysis</h3>
-<p>
-Identified irregular patterns and trends relevant to operational
-and financial decision-making.
-</p>
+    <h2>1️⃣ Data Integration</h2>
+    <p>
+      Joined multiple relational tables using INNER JOIN, LEFT JOIN,
+      and subqueries to create meaningful analytical views.
+    </p>
 
-<h3>4️⃣ Reporting Preparation</h3>
-<p>
-Structured query outputs to support dashboards and reporting tools,
-ensuring consistent metric definitions across teams.
-</p>
+    <h2>2️⃣ KPI Computation</h2>
+    <p>
+      Applied aggregation functions (SUM, COUNT, AVG, GROUP BY)
+      to compute key performance indicators and business summaries.
+    </p>
 
-<h2>📊 Results & Impact</h2>
-<ul>
-<li>Generated clean, decision-ready reporting metrics</li>
-<li>Reduced analysis time through reusable SQL queries</li>
-<li>Improved transparency and KPI consistency</li>
-<li>Enabled faster stakeholder reporting workflows</li>
-</ul>
+    <h2>3️⃣ Anomaly & Trend Analysis</h2>
+    <p>
+      Identified irregular patterns and trends relevant to operational
+      and financial decision-making.
+    </p>
 
-<h2>🎯 My Contribution</h2>
-<p>
-Designed optimized SQL queries, ensured relational integrity,
-and aligned computed metrics with stakeholder reporting needs.
-</p>
+    <h2>4️⃣ Reporting Preparation</h2>
+    <p>
+      Structured query outputs to support dashboards and reporting tools,
+      ensuring consistent metric definitions across teams.
+    </p>
 
-<br>
-<a href="index.html" style="color:#00b4d8;">⬅ Back to Home</a>
+    <h2>📊 Results & Impact</h2>
+    <ul>
+      <li>Generated clean, decision-ready reporting metrics</li>
+      <li>Reduced analysis time through reusable SQL queries</li>
+      <li>Improved transparency and KPI consistency</li>
+      <li>Enabled faster stakeholder reporting workflows</li>
+    </ul>
+
+    <h2>🎯 My Contribution</h2>
+    <p>
+      Designed optimized SQL queries, ensured relational integrity,
+      and aligned computed metrics with stakeholder reporting needs.
+    </p>
+
+    <!-- ✅ Footer Buttons -->
+    <div class="footer-actions">
+      <a class="btn" href="../projects.html">⬅ Back to Projects</a>
+      <a class="btn" href="../index.html">⬅ Back to Home</a>
+    </div>
+
+  </div>
+</div>
 
 </body>
 </html>
