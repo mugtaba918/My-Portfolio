@@ -42,10 +42,12 @@ body {
   border-radius:10px; 
   border:1px solid #2a3750;
   display:inline-block;
+  transition:0.3s;
 }
 
 .btn:hover { 
   background:#243149; 
+  transform:scale(1.05);
 }
 
 .card {
@@ -113,23 +115,25 @@ ul {
 .back-home:hover{
   text-decoration:underline;
 }
+
+.cv-buttons{
+  margin-top:20px;
+}
 </style>
 </head>
 
 <body>
 
-<!-- Banner -->
 <img src="assets/img/banner1.png" alt="Portfolio Banner" class="banner">
 
 <div class="container">
 
-  <!-- Navigation Buttons -->
+  <!-- Navigation -->
   <div class="nav">
     <a class="btn" href="index.html">Home</a>
     <a class="btn" href="projects/project1.html">Projects</a>
     <a class="btn" href="about.html">About</a>
     <a class="btn" href="contact.html">Contact</a>
-    <a class="btn" href="assets/Mugtaba_Awad_Resume.pdf" target="_blank">Download Resume</a>
   </div>
 
   <div class="card">
@@ -142,6 +146,17 @@ ul {
       and introductory predictive modeling. I am passionate about transforming raw data into
       meaningful insights that support data-driven decision-making.
     </p>
+
+    <!-- ✅ CV Buttons -->
+    <div class="cv-buttons">
+      <a class="btn" href="assets/img/Mugtaba_Awad_Resume.pdf" target="_blank">
+        View My CV
+      </a>
+
+      <a class="btn" href="assets/img/Mugtaba_Awad_Resume.pdf" download>
+        Download My CV
+      </a>
+    </div>
 
     <div class="two-col">
 
