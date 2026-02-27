@@ -1,92 +1,192 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact | Mugtaba Awad</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background:#0f1115; color:#e9eef5; }
-    .container { max-width: 980px; margin: 0 auto; padding: 28px 18px; }
-    .nav { display:flex; gap:10px; flex-wrap:wrap; margin-bottom: 18px; }
-    .btn {
-      background:#1b2432; color:#e9eef5; text-decoration:none;
-      padding:10px 14px; border-radius:10px; border:1px solid #2a3750;
-      display:inline-block;
-    }
-    .btn:hover { background:#243149; }
-    .card {
-      background:#131824; border:1px solid #22304a; border-radius:16px;
-      padding:18px; margin-top:14px;
-    }
-    h1 { margin: 0 0 10px; font-size: 28px; }
-    p { line-height: 1.6; margin: 10px 0; color:#cdd7e6; }
-    .row { display:grid; grid-template-columns: 1fr 1fr; gap:14px; }
-    @media (max-width: 850px){ .row { grid-template-columns: 1fr; } }
-    .label { color:#9fb0c9; font-size: 13px; margin-bottom:6px; }
-    .value a { color:#e9eef5; }
-    .note { color:#9fb0c9; font-size: 14px; }
-    input, textarea {
-      width:100%; padding:12px; border-radius:12px; border:1px solid #2a3750;
-      background:#0f1115; color:#e9eef5; outline:none;
-    }
-    textarea { min-height: 120px; resize: vertical; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact | Mugtaba Awad</title>
+
+<style>
+body { 
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  background:#0f1115; 
+  color:#e9eef5; 
+}
+
+.banner{
+  width:100%;
+  max-width:1200px;
+  display:block;
+  margin:20px auto;
+  border-radius:14px;
+}
+
+.container { 
+  max-width: 980px; 
+  margin: 0 auto; 
+  padding: 28px 18px; 
+}
+
+.nav { 
+  display:flex; 
+  gap:10px; 
+  flex-wrap:wrap; 
+  margin-bottom: 18px; 
+}
+
+.btn {
+  background:#1b2432; 
+  color:#e9eef5; 
+  text-decoration:none;
+  padding:10px 14px; 
+  border-radius:10px; 
+  border:1px solid #2a3750;
+  display:inline-block;
+}
+
+.btn:hover { 
+  background:#243149; 
+}
+
+.card {
+  background:#131824; 
+  border:1px solid #22304a; 
+  border-radius:16px;
+  padding:18px; 
+  margin-top:14px;
+}
+
+h1 { 
+  margin: 0 0 10px; 
+  font-size: 28px; 
+}
+
+p { 
+  line-height: 1.6; 
+  margin: 10px 0; 
+  color:#cdd7e6; 
+}
+
+.row { 
+  display:grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap:14px; 
+}
+
+@media (max-width: 850px){ 
+  .row { grid-template-columns: 1fr; } 
+}
+
+.label { 
+  color:#9fb0c9; 
+  font-size: 13px; 
+  margin-bottom:6px; 
+}
+
+.value a { 
+  color:#e9eef5; 
+}
+
+.note { 
+  color:#9fb0c9; 
+  font-size: 14px; 
+}
+
+input, textarea {
+  width:100%; 
+  padding:12px; 
+  border-radius:12px; 
+  border:1px solid #2a3750;
+  background:#0f1115; 
+  color:#e9eef5; 
+  outline:none;
+}
+
+textarea { 
+  min-height: 120px; 
+  resize: vertical; 
+}
+
+.back-home{
+  display:inline-block;
+  margin-top:20px;
+  color:#00b4d8;
+  text-decoration:none;
+  font-size:16px;
+}
+.back-home:hover{
+  text-decoration:underline;
+}
+</style>
 </head>
 
 <body>
-  <div class="container">
-    <!-- Navigation Buttons -->
-    <div class="nav">
-      <a class="btn" href="index.html">Home</a>
-      <a class="btn" href="projects.html">Projects</a>
-      <a class="btn" href="about.html">About</a>
-      <a class="btn" href="contact.html">Contact</a>
-      <a class="btn" href="assets/Mugtaba_Awad_Resume.pdf" target="_blank">Download Resume (PDF)</a>
-    </div>
 
-    <div class="card">
-      <h1>Contact</h1>
-      <p>If you’d like to connect about internships, entry-level roles, or analytics projects, feel free to reach out.</p>
+<!-- ✅ Banner -->
+<img src="assets/img/banner1.png" alt="Portfolio Banner" class="banner">
 
-      <div class="row">
-        <div class="card">
-          <div class="label">Email</div>
-          <div class="value"><a href="mailto:mugtaba.nc@gmail.com">mugtaba.nc@gmail.com</a></div>
+<div class="container">
 
-          <div class="label" style="margin-top:14px;">Phone</div>
-          <div class="value"><a href="tel:+19192980464">+1 (919) 298-0464</a></div>
+  <!-- Navigation Buttons -->
+  <div class="nav">
+    <a class="btn" href="index.html">Home</a>
+    <a class="btn" href="projects/project1.html">Projects</a>
+    <a class="btn" href="about.html">About</a>
+    <a class="btn" href="contact.html">Contact</a>
+    <a class="btn" href="assets/Mugtaba_Awad_Resume.pdf" target="_blank">
+      Download Resume (PDF)
+    </a>
+  </div>
 
-          <div class="label" style="margin-top:14px;">Location</div>
-          <div class="value">Omaha, NE, United States</div>
+  <div class="card">
+    <h1>Contact</h1>
+    <p>If you’d like to connect about internships, entry-level roles, or analytics projects, feel free to reach out.</p>
 
-          <div class="label" style="margin-top:14px;">Links</div>
-          <div class="value">
-            <a href="#" target="_blank">https://www.linkedin.com/in/mugtaba-awad-412293368/</a> •
-            <a href="#" target="_blank">https://github.com/mugtaba918/My-portfolio</a>
-          </div>
-
-          <p class="note" style="margin-top:14px;">
-            Note: Update the LinkedIn/Projects links above once you paste your real URLs.
-          </p>
+    <div class="row">
+      <div class="card">
+        <div class="label">Email</div>
+        <div class="value">
+          <a href="mailto:mugtaba.nc@gmail.com">mugtaba.nc@gmail.com</a>
         </div>
 
-        <div class="card">
-          <p class="note"><b>Quick message template:</b> (Copy/paste in email)</p>
-          <p class="note">
-            Subject: Data Analytics / Data Science Opportunity<br/>
-            Hi Mugtaba, I saw your portfolio and wanted to connect about...
-          </p>
+        <div class="label" style="margin-top:14px;">Phone</div>
+        <div class="value">
+          <a href="tel:+19192980464">+1 (919) 298-0464</a>
+        </div>
 
-          <!-- Optional: simple form (doesn't send by itself on GitHub Pages) -->
-          <div class="label" style="margin-top:14px;">(Optional) Contact Form</div>
-          <p class="note">This form is only for display on GitHub Pages. To make it send messages, you need Formspree or another service.</p>
-          <input type="text" placeholder="Your name (display only)"/>
-          <input type="email" placeholder="Your email (display only)" style="margin-top:10px;"/>
-          <textarea placeholder="Your message (display only)" style="margin-top:10px;"></textarea>
-          <a class="btn" href="mailto:mugtaba.nc@gmail.com" style="margin-top:10px;">Send Email</a>
+        <div class="label" style="margin-top:14px;">Location</div>
+        <div class="value">Omaha, NE, United States</div>
+
+        <div class="label" style="margin-top:14px;">Links</div>
+        <div class="value">
+          <a href="https://www.linkedin.com/in/mugtaba-awad-412293368/" target="_blank">LinkedIn</a> •
+          <a href="https://github.com/mugtaba918/My-portfolio" target="_blank">GitHub</a>
         </div>
       </div>
+
+      <div class="card">
+        <p class="note"><b>Quick message template:</b></p>
+        <p class="note">
+          Subject: Data Analytics / Data Science Opportunity<br/>
+          Hi Mugtaba, I saw your portfolio and wanted to connect about...
+        </p>
+
+        <div class="label" style="margin-top:14px;">Contact Form (Display Only)</div>
+        <input type="text" placeholder="Your name"/>
+        <input type="email" placeholder="Your email" style="margin-top:10px;"/>
+        <textarea placeholder="Your message" style="margin-top:10px;"></textarea>
+        <a class="btn" href="mailto:mugtaba.nc@gmail.com" style="margin-top:10px;">
+          Send Email
+        </a>
+      </div>
     </div>
+
+    <!-- ✅ Back to Home Button -->
+    <a href="index.html" class="back-home">⬅ Back to Home</a>
+
   </div>
+
+</div>
+
 </body>
 </html>
