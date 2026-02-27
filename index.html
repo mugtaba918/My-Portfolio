@@ -2,7 +2,12 @@
 <html>
 <head>
   <title>Mugtaba Awad | Data Science Portfolio</title>
+
   <style>
+    html{
+      scroll-behavior: smooth; /* 🔥 نزول ناعم */
+    }
+
     body{
       margin:0;
       text-align:center;
@@ -37,7 +42,7 @@
     }
 
     .projects-wrap{
-      margin-top:20px;
+      margin-top:80px; /* مسافة عشان يكون واضح عند النزول */
     }
 
     .project-link{
@@ -71,7 +76,10 @@
   <a href="about.html" class="btn">About</a>
   <a href="contact.html" class="btn">Contact</a>
 
-  <!-- ✅ Resume Button -->
+  <!-- 🔥 زر Projects ينزل للقسم -->
+  <a href="#projects" class="btn">Projects</a>
+
+  <!-- ✅ Resume Buttons -->
   <div class="cv-buttons">
       <a class="btn" href="assets/img/Mugtaba_Awad_Resume.pdf" target="_blank">
         View My CV
@@ -80,10 +88,10 @@
       <a class="btn" href="assets/img/Mugtaba_Awad_Resume.pdf" download>
         Download My CV
       </a>
-    </div>
+  </div>
 
   <!-- ✅ Projects Section -->
-  <div class="projects-wrap">
+  <div class="projects-wrap" id="projects">
     <h2>Projects</h2>
     <a href="projects/project1.html" class="project-link">Project 1</a>
     <a href="projects/project2.html" class="project-link">Project 2</a>
