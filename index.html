@@ -1,41 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mugtaba Awad | Data Science Portfolio</title>
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial;
-            background-color: #0d1b2a;
-            color: white;
-        }
+  <title>Mugtaba Awad | Data Science Portfolio</title>
+  <style>
+    body{
+      margin:0;
+      text-align:center;
+      font-family: Arial, sans-serif;
+      background-color:#0d1b2a;
+      color:white;
+    }
 
-        .btn {
-            display: inline-block;
-            margin: 20px;
-            padding: 15px 30px;
-            font-size: 18px;
-            background-color: #1b263b;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
+    .banner{
+      width:100%;
+      max-width:1200px;
+      display:block;
+      margin:20px auto 10px auto;
+      border-radius:12px;
+    }
 
-        .btn:hover {
-            background-color: #00b4d8;
-            transform: scale(1.05);
-        }
-    </style>
+    .btn{
+      display:inline-block;
+      margin:15px;
+      padding:15px 30px;
+      font-size:18px;
+      background-color:#1b263b;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background-color:#00b4d8;
+      transform:scale(1.05);
+    }
+
+    .projects-wrap{
+      margin-top:20px;
+    }
+
+    .project-link{
+      display:inline-block;
+      margin:8px;
+      padding:10px 18px;
+      border:1px solid #00b4d8;
+      border-radius:8px;
+      color:#00b4d8;
+      text-decoration:none;
+      transition:0.3s;
+      font-size:16px;
+    }
+
+    .project-link:hover{
+      background:#00b4d8;
+      color:#0d1b2a;
+      transform:scale(1.03);
+    }
+  </style>
 </head>
 
 <body>
 
-    <h1>Welcome to My Data Science Portfolio</h1>
+  <!-- ✅ Banner -->
+  <img src="assets/img/banner.png" alt="Portfolio Banner" class="banner">
 
-    <a href="about.html" class="btn">About</a>
-    <a href="projects.html" class="btn">Projects</a>
-    <a href="contact.html" class="btn">Contact</a>
+  <h1>Welcome to My Data Science Portfolio</h1>
+
+  <!-- ✅ Main Buttons -->
+  <a href="about.html" class="btn">About</a>
+  <a href="contact.html" class="btn">Contact</a>
+
+  <!-- ✅ Projects Section (بدل projects.html) -->
+  <div class="projects-wrap">
+    <h2>Projects</h2>
+    <a href="projects/project1.html" class="project-link">Project 1</a>
+    <a href="projects/project2.html" class="project-link">Project 2</a>
+    <a href="projects/project3.html" class="project-link">Project 3</a>
+    <a href="projects/project4.html" class="project-link">Project 4</a>
+  </div>
 
 </body>
 </html>
