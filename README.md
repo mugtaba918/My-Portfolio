@@ -1,1 +1,1 @@
-<img src="assets/img/banner1.png" width="45%">
+<img src="assets/img/banner1.png" width="25%">
