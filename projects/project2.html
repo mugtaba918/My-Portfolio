@@ -1,82 +1,229 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Clinical Data Remediation | Mugtaba Awad</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Project 1 | Mugtaba Awad</title>
+
+<style>
+  body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#0f2027;
+    color:#e9eef5;
+  }
+
+  .banner{
+    width:100%;
+    max-width:1200px;
+    display:block;
+    margin:20px auto;
+    border-radius:14px;
+  }
+
+  .container{
+    max-width:980px;
+    margin:0 auto;
+    padding: 18px 18px 40px;
+  }
+
+  .nav{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin: 8px 0 18px;
+  }
+
+  .btn{
+    background:#1b263b;
+    color:white;
+    text-decoration:none;
+    padding:10px 14px;
+    border-radius:10px;
+    border:1px solid #2a3750;
+    display:inline-block;
+    transition:0.25s;
+  }
+
+  .btn:hover{
+    background:#00b4d8;
+    color:#0f2027;
+    transform:translateY(-1px);
+  }
+
+  .card{
+    background:#131824;
+    border:1px solid #22304a;
+    border-radius:16px;
+    padding:18px;
+    margin-top:14px;
+  }
+
+  h1{
+    margin:0 0 6px;
+    font-size:28px;
+    text-align:center;
+  }
+
+  h3{
+    margin:0 0 12px;
+    text-align:center;
+    color:#cdd7e6;
+    font-weight: normal;
+  }
+
+  h2{
+    margin:18px 0 10px;
+    font-size:18px;
+  }
+
+  p{
+    line-height:1.7;
+    margin:10px 0;
+    color:#cdd7e6;
+  }
+
+  ul{
+    margin: 8px 0 0 18px;
+    color:#cdd7e6;
+    line-height:1.7;
+  }
+
+  .tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:10px;
+  }
+
+  .tag{
+    font-size:12px;
+    padding:6px 10px;
+    border-radius:999px;
+    background:#1b263b;
+    border:1px solid #2a3750;
+    color:#cdd7e6;
+  }
+
+  .footer-actions{
+    margin-top:18px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .link{
+    color:#00b4d8;
+    text-decoration:none;
+    font-size:16px;
+  }
+  .link:hover{ text-decoration:underline; }
+</style>
 </head>
 
-<body style="font-family:Arial; background:#0f2027; color:white; padding:40px;">
+<body>
 
-<h1 style="text-align:center;">Clinical Data Remediation & Visualization</h1>
-<h3 style="text-align:center;">Data Quality Engineering for Stakeholder Reporting</h3>
+<!-- ✅ Banner (because this file is inside /projects, we use ../ ) -->
+<img src="../assets/img/banner1.png" alt="Portfolio Banner" class="banner">
 
-<hr>
+<div class="container">
 
-<h2>📌 Project Overview</h2>
-<p>
-Clinical datasets often contain missing values, placeholder symbols, and coded identifiers that reduce 
-trust in reporting and decision-making. This project focused on cleaning and remediating 
-diabetes-related clinical records to improve interpretability, consistency, and stakeholder confidence.
-</p>
+  <!-- ✅ Navigation Buttons -->
+  <div class="nav">
+    <a class="btn" href="../index.html">Home</a>
+    <a class="btn" href="../projects.html">Projects</a>
+    <a class="btn" href="../about.html">About</a>
+    <a class="btn" href="../contact.html">Contact</a>
+    <a class="btn" href="../assets/Mugtaba_Awad_Resume.pdf" target="_blank">Resume (PDF)</a>
+  </div>
 
-<h2>🚨 Business Problem</h2>
-<ul>
-<li>High missingness in key clinical markers (e.g., A1C levels)</li>
-<li>Administrative placeholders mixed with valid values</li>
-<li>Coded identifiers without readable mappings</li>
-<li>Inconsistent or misleading distributions across variables</li>
-</ul>
+  <div class="card">
+    <h1>High Volume Sentiment Engineering</h1>
+    <h3>Modular NLP Pipeline for Large-Scale Sentiment Analysis</h3>
 
-<h2>🛠 Tools & Technologies</h2>
-<ul>
-<li>Python (Pandas, Data Cleaning)</li>
-<li>SQL</li>
-<li>Power BI</li>
-<li>Exploratory Data Analysis (EDA)</li>
-<li>Data Quality Validation Checks</li>
-</ul>
+    <h2>📌 Project Overview</h2>
+    <p>
+      This project designed and implemented a modular, automated NLP pipeline to remediate and model
+      50,000 decentralized IMDb movie reviews. The objective was to transform noisy raw text into a
+      high-fidelity “Golden Asset” suitable for high-stakes sentiment modeling and stakeholder reporting.
+    </p>
 
-<h2>⚙️ Technical Approach</h2>
+    <h2>🚨 Business Problem</h2>
+    <p>
+      Manual review of 50,000 reviews resulted in inconsistent sentiment insights, linguistic noise, and feature explosion.
+      The team hypothesized that an automated modular pipeline would outperform manual cleaning by
+      preserving semantic signals while eliminating structural noise.
+    </p>
 
-<h3>1️⃣ Data Standardization</h3>
-<p>
-Identified and standardized missing values, replaced placeholder symbols,
-and verified column data types to ensure consistency.
-</p>
+    <h2>🛠 Tools & Technologies</h2>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">Pandas</span>
+      <span class="tag">NLTK</span>
+      <span class="tag">Scikit-learn</span>
+      <span class="tag">TF-IDF (Bi-grams)</span>
+      <span class="tag">GitHub SDLC</span>
+      <span class="tag">Matplotlib</span>
+      <span class="tag">WordCloud</span>
+    </div>
 
-<h3>2️⃣ Code Mapping & Transformation</h3>
-<p>
-Mapped coded identifiers into human-readable categories,
-improving interpretability for non-technical stakeholders.
-</p>
+    <h2>⚙️ Technical Implementation</h2>
 
-<h3>3️⃣ Validation & Audit</h3>
-<p>
-Performed before/after distribution comparisons and quality checks
-to confirm remediation did not distort clinical meaning.
-</p>
+    <h2>1️⃣ Ingestion & Forensic Audit</h2>
+    <p>
+      Automated ingestion of 50,000 .txt files using Python (os & glob).
+      Binary labels engineered programmatically to preserve 100% class integrity.
+      Dataset consolidated into a master CSV serving as the single Source of Truth.
+    </p>
 
-<h3>4️⃣ Visualization & Reporting</h3>
-<p>
-Developed stakeholder-friendly dashboards and summary visuals
-to clearly communicate improvements in data quality.
-</p>
+    <h2>2️⃣ Linguistic Distillation</h2>
+    <p>
+      Implemented precision-based stop-word filtering using NLTK.
+      Preserved negation signals such as “not” and “never” to prevent ethical misclassification.
+      Stripped HTML artifacts and non-semantic placeholders.
+    </p>
 
-<h2>📊 Results & Impact</h2>
-<ul>
-<li>Improved interpretability of key clinical markers</li>
-<li>Reduced reporting errors caused by coded placeholders</li>
-<li>Increased stakeholder confidence in dashboards</li>
-<li>Delivered cleaner, decision-ready clinical dataset</li>
-</ul>
+    <h2>3️⃣ Feature Engineering & Modeling</h2>
+    <p>
+      Applied TF-IDF vectorization with bi-grams (ngram_range = (1,2)).
+      Capped vocabulary at 20,000 tokens to prevent feature explosion.
+      Built Logistic Regression and Naïve Bayes classifiers.
+    </p>
 
-<h2>🎯 My Contribution</h2>
-<p>
-Led validation checks, ensured data consistency standards,
-and supported stakeholder-ready visualization outputs.
-</p>
+    <h2>📊 Visual Validation</h2>
+    <ul>
+      <li>Class Balance Audit (25,000 Positive / 25,000 Negative)</li>
+      <li>Before/After Word Count Histograms</li>
+      <li>Semantic Word Clouds (Noise Removal Confirmation)</li>
+      <li>Confusion Matrix (Model Precision Validation)</li>
+    </ul>
 
-<br>
-<a href="index.html" style="color:#00b4d8;">⬅ Back to Home</a>
+    <h2>📈 Results & Impact</h2>
+    <ul>
+      <li>Reduced feature space from 100,000+ noisy tokens to 20,000 high-intensity markers</li>
+      <li>Preserved critical sentiment drivers (e.g., “not good”)</li>
+      <li>Improved predictive stability and clarity</li>
+      <li>Maintained perfect 50/50 class balance to eliminate bias</li>
+      <li>Delivered a scalable, production-ready NLP pipeline</li>
+    </ul>
+
+    <h2>🎯 My Role – Project Manager</h2>
+    <p>
+      Managed the Software Development Life Cycle (SDLC) via GitHub.
+      Enforced peer review standards on distillation logic.
+      Oversaw ethical validation and ensured reproducibility across modules.
+    </p>
+
+    <!-- ✅ Footer Buttons -->
+    <div class="footer-actions">
+      <a class="btn" href="../projects.html">⬅ Back to Projects</a>
+      <a class="btn" href="../index.html">⬅ Back to Home</a>
+    </div>
+
+  </div>
+</div>
 
 </body>
 </html>
