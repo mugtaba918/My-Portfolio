@@ -1,97 +1,186 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About | Mugtaba Awad</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background:#0f1115; color:#e9eef5; }
-    .container { max-width: 980px; margin: 0 auto; padding: 28px 18px; }
-    .nav { display:flex; gap:10px; flex-wrap:wrap; margin-bottom: 18px; }
-    .btn {
-      background:#1b2432; color:#e9eef5; text-decoration:none;
-      padding:10px 14px; border-radius:10px; border:1px solid #2a3750;
-      display:inline-block;
-    }
-    .btn:hover { background:#243149; }
-    .card {
-      background:#131824; border:1px solid #22304a; border-radius:16px;
-      padding:18px; margin-top:14px;
-    }
-    h1 { margin: 0 0 10px; font-size: 28px; }
-    h2 { margin: 18px 0 10px; font-size: 18px; }
-    p { line-height: 1.6; margin: 10px 0; color:#cdd7e6; }
-    ul { margin: 8px 0 0 18px; color:#cdd7e6; }
-    .tag { display:inline-block; padding:6px 10px; border-radius:999px; margin:6px 6px 0 0; background:#1b2432; border:1px solid #2a3750; font-size: 13px; }
-    .muted { color:#9fb0c9; font-size: 14px; }
-    .two-col { display:grid; grid-template-columns: 1.2fr 0.8fr; gap:14px; }
-    @media (max-width: 850px){ .two-col { grid-template-columns: 1fr; } }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>About | Mugtaba Awad</title>
+
+<style>
+body { 
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  background:#0f1115; 
+  color:#e9eef5; 
+}
+
+.banner{
+  width:100%;
+  max-width:1200px;
+  display:block;
+  margin:20px auto;
+  border-radius:14px;
+}
+
+.container { 
+  max-width: 980px; 
+  margin: 0 auto; 
+  padding: 28px 18px; 
+}
+
+.nav { 
+  display:flex; 
+  gap:10px; 
+  flex-wrap:wrap; 
+  margin-bottom: 18px; 
+}
+
+.btn {
+  background:#1b2432; 
+  color:#e9eef5; 
+  text-decoration:none;
+  padding:10px 14px; 
+  border-radius:10px; 
+  border:1px solid #2a3750;
+  display:inline-block;
+}
+
+.btn:hover { 
+  background:#243149; 
+}
+
+.card {
+  background:#131824; 
+  border:1px solid #22304a; 
+  border-radius:16px;
+  padding:18px; 
+  margin-top:14px;
+}
+
+h1 { 
+  margin: 0 0 10px; 
+  font-size: 28px; 
+}
+
+h2 { 
+  margin: 18px 0 10px; 
+  font-size: 18px; 
+}
+
+p { 
+  line-height: 1.6; 
+  margin: 10px 0; 
+  color:#cdd7e6; 
+}
+
+ul { 
+  margin: 8px 0 0 18px; 
+  color:#cdd7e6; 
+}
+
+.tag { 
+  display:inline-block; 
+  padding:6px 10px; 
+  border-radius:999px; 
+  margin:6px 6px 0 0; 
+  background:#1b2432; 
+  border:1px solid #2a3750; 
+  font-size: 13px; 
+}
+
+.muted { 
+  color:#9fb0c9; 
+  font-size: 14px; 
+}
+
+.two-col { 
+  display:grid; 
+  grid-template-columns: 1.2fr 0.8fr; 
+  gap:14px; 
+}
+
+@media (max-width: 850px){ 
+  .two-col { grid-template-columns: 1fr; } 
+}
+
+.back-home{
+  display:inline-block;
+  margin-top:20px;
+  color:#00b4d8;
+  text-decoration:none;
+  font-size:16px;
+}
+
+.back-home:hover{
+  text-decoration:underline;
+}
+</style>
 </head>
 
 <body>
-  <div class="container">
-    <!-- Navigation Buttons -->
-    <div class="nav">
-      <a class="btn" href="index.html">Home</a>
-      <a class="btn" href="projects.html">Projects</a>
-      <a class="btn" href="about.html">About</a>
-      <a class="btn" href="contact.html">Contact</a>
-      <a class="btn" href="assets/Mugtaba_Awad_Resume.pdf" target="_blank">Download Resume (PDF)</a>
-    </div>
 
-    <div class="card">
-      <h1>About Me</h1>
-      <p class="muted">Mugtaba Awad • Data Science / Data Analytics</p>
+<!-- ✅ Banner -->
+<img src="assets/img/banner1.png" alt="Portfolio Banner" class="banner">
 
-      <p>
-        I am a recent Data Science graduate with a strong foundation in Python, SQL, Power BI, and Tableau.
-        I have hands-on experience from academic and project-based work including data cleaning, exploratory data analysis,
-        data visualization, and introductory predictive modeling. I’m currently working at Fiserv in a high-volume
-        production environment, and I’m actively looking for an entry-level role or internship where I can apply my
-        analytics skills to support data-driven decisions.
-      </p>
+<div class="container">
 
-      <div class="two-col">
-        <div class="card">
-          <h2>What I Bring</h2>
-          <ul>
-            <li>Data cleaning & preprocessing (missing values, duplicates, data consistency)</li>
-            <li>Exploratory analysis and clear visual storytelling</li>
-            <li>Dashboarding in Power BI and Tableau</li>
-            <li>SQL querying (joins, aggregations, KPI reporting)</li>
-            <li>Python notebooks for analysis and modeling (Jupyter)</li>
-          </ul>
-
-          <h2>Tools</h2>
-          <span class="tag">Python</span>
-          <span class="tag">SQL</span>
-          <span class="tag">Power BI</span>
-          <span class="tag">Tableau</span>
-          <span class="tag">Excel</span>
-          <span class="tag">Jupyter Notebook</span>
-        </div>
-
-        <div class="card">
-          <h2>Current Role</h2>
-          <p><b>Machine Operator — Fiserv</b> (Jan 2023 – Present)</p>
-          <ul>
-            <li>Operate and monitor automated production systems in a regulated, high-volume environment.</li>
-            <li>Perform quality checks, document outputs, and support continuous improvement.</li>
-            <li>Trained multiple new machine operators and received “Best of the Best” award.</li>
-          </ul>
-
-          <h2>Education</h2>
-          <p><b>B.S. in Data Science — Bellevue University</b></p>
-          <p class="muted">Relevant coursework: Applied Data Analysis, Machine Learning Fundamentals, Databases, Data Visualization</p>
-        </div>
-      </div>
-    </div>
-
-    <p class="muted" style="margin-top:14px;">
-      Tip: If you want this page to look more “portfolio professional”, I can match the style to your homepage and add a small
-      profile section (photo + quick highlights).
-    </p>
+  <!-- Navigation Buttons -->
+  <div class="nav">
+    <a class="btn" href="index.html">Home</a>
+    <a class="btn" href="projects/project1.html">Projects</a>
+    <a class="btn" href="about.html">About</a>
+    <a class="btn" href="contact.html">Contact</a>
+    <a class="btn" href="assets/Mugtaba_Awad_Resume.pdf" target="_blank">
+      Download Resume (PDF)
+    </a>
   </div>
+
+  <div class="card">
+    <h1>About Me</h1>
+    <p class="muted">Mugtaba Awad • Data Science / Data Analytics</p>
+
+    <p>
+      I am a recent Data Science graduate with a strong foundation in Python, SQL, Power BI, and Tableau.
+      I have hands-on experience from academic and project-based work including data cleaning, exploratory data analysis,
+      data visualization, and introductory predictive modeling.
+    </p>
+
+    <div class="two-col">
+
+      <div class="card">
+        <h2>What I Bring</h2>
+        <ul>
+          <li>Data cleaning & preprocessing</li>
+          <li>Exploratory analysis & storytelling</li>
+          <li>Dashboarding in Power BI & Tableau</li>
+          <li>SQL querying & KPI reporting</li>
+          <li>Python notebooks (Jupyter)</li>
+        </ul>
+
+        <h2>Tools</h2>
+        <span class="tag">Python</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">Tableau</span>
+        <span class="tag">Excel</span>
+        <span class="tag">Jupyter</span>
+      </div>
+
+      <div class="card">
+        <h2>Current Role</h2>
+        <p><b>Machine Operator — Fiserv</b></p>
+
+        <h2>Education</h2>
+        <p><b>B.S. in Data Science — Bellevue University</b></p>
+      </div>
+
+    </div>
+
+    <!-- ✅ Back to Home -->
+    <a href="index.html" class="back-home">⬅ Back to Home</a>
+
+  </div>
+
+</div>
+
 </body>
 </html>
