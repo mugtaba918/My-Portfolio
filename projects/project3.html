@@ -1,82 +1,214 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Power BI Stakeholder Dashboard | Mugtaba Awad</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Power BI Stakeholder Dashboard | Mugtaba Awad</title>
+
+<style>
+  body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#0f2027;
+    color:#e9eef5;
+  }
+
+  .banner{
+    width:100%;
+    max-width:1200px;
+    display:block;
+    margin:20px auto;
+    border-radius:14px;
+  }
+
+  .container{
+    max-width:980px;
+    margin:0 auto;
+    padding: 18px 18px 40px;
+  }
+
+  .nav{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin: 8px 0 18px;
+  }
+
+  .btn{
+    background:#1b263b;
+    color:white;
+    text-decoration:none;
+    padding:10px 14px;
+    border-radius:10px;
+    border:1px solid #2a3750;
+    display:inline-block;
+    transition:0.25s;
+  }
+
+  .btn:hover{
+    background:#00b4d8;
+    color:#0f2027;
+    transform:translateY(-1px);
+  }
+
+  .card{
+    background:#131824;
+    border:1px solid #22304a;
+    border-radius:16px;
+    padding:18px;
+    margin-top:14px;
+  }
+
+  h1{
+    margin:0 0 6px;
+    font-size:28px;
+    text-align:center;
+  }
+
+  h3{
+    margin:0 0 12px;
+    text-align:center;
+    color:#cdd7e6;
+    font-weight: normal;
+  }
+
+  h2{
+    margin:18px 0 10px;
+    font-size:18px;
+  }
+
+  p{
+    line-height:1.7;
+    margin:10px 0;
+    color:#cdd7e6;
+  }
+
+  ul{
+    margin: 8px 0 0 18px;
+    color:#cdd7e6;
+    line-height:1.7;
+  }
+
+  .tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:10px;
+  }
+
+  .tag{
+    font-size:12px;
+    padding:6px 10px;
+    border-radius:999px;
+    background:#1b263b;
+    border:1px solid #2a3750;
+    color:#cdd7e6;
+  }
+
+  .footer-actions{
+    margin-top:18px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+</style>
 </head>
 
-<body style="font-family:Arial; background:#0f2027; color:white; padding:40px;">
+<body>
 
-<h1 style="text-align:center;">Power BI Stakeholder Dashboard</h1>
-<h3 style="text-align:center;">Interactive KPI & Performance Intelligence Solution</h3>
+<!-- ✅ Banner -->
+<img src="../assets/img/banner1.png" alt="Portfolio Banner" class="banner">
 
-<hr>
+<div class="container">
 
-<h2>📌 Project Overview</h2>
-<p>
-Developed an interactive Power BI dashboard designed to help stakeholders 
-track KPIs, performance trends, and operational metrics without relying on 
-manual spreadsheets or static reports.
-</p>
+  <!-- ✅ Navigation -->
+  <div class="nav">
+    <a class="btn" href="../index.html">Home</a>
+    <a class="btn" href="../projects.html">Projects</a>
+    <a class="btn" href="../about.html">About</a>
+    <a class="btn" href="../contact.html">Contact</a>
+    <a class="btn" href="../assets/Mugtaba_Awad_Resume.pdf" target="_blank">Resume (PDF)</a>
+  </div>
 
-<h2>🚨 Business Problem</h2>
-<ul>
-<li>Static reports slowed down executive decision-making</li>
-<li>Manual analysis created inconsistencies across teams</li>
-<li>Difficult to compare before/after performance</li>
-<li>Limited ability to segment and drill into data</li>
-</ul>
+  <div class="card">
+    <h1>Power BI Stakeholder Dashboard</h1>
+    <h3>Interactive KPI & Performance Intelligence Solution</h3>
 
-<h2>🛠 Tools & Technologies</h2>
-<ul>
-<li>Power BI</li>
-<li>DAX</li>
-<li>Excel</li>
-<li>Data Modeling</li>
-<li>KPI Design & Visualization</li>
-</ul>
+    <h2>📌 Project Overview</h2>
+    <p>
+      Developed an interactive Power BI dashboard designed to help stakeholders 
+      track KPIs, performance trends, and operational metrics without relying on 
+      manual spreadsheets or static reports.
+    </p>
 
-<h2>⚙️ Technical Approach</h2>
+    <h2>🚨 Business Problem</h2>
+    <ul>
+      <li>Static reports slowed down executive decision-making</li>
+      <li>Manual analysis created inconsistencies across teams</li>
+      <li>Difficult to compare before/after performance</li>
+      <li>Limited ability to segment and drill into data</li>
+    </ul>
 
-<h3>1️⃣ Data Modeling</h3>
-<p>
-Structured and modeled the dataset to enable scalable KPI tracking 
-and consistent reporting logic across business metrics.
-</p>
+    <h2>🛠 Tools & Technologies</h2>
+    <div class="tags">
+      <span class="tag">Power BI</span>
+      <span class="tag">DAX</span>
+      <span class="tag">Excel</span>
+      <span class="tag">Data Modeling</span>
+      <span class="tag">KPI Design</span>
+      <span class="tag">Visualization</span>
+    </div>
 
-<h3>2️⃣ Dashboard Design</h3>
-<p>
-Designed a clean, executive-friendly layout using KPI cards, 
-trend charts, and performance visuals to highlight insights quickly.
-</p>
+    <h2>⚙️ Technical Approach</h2>
 
-<h3>3️⃣ Interactivity & Exploration</h3>
-<p>
-Implemented slicers, filters, and drill-down capabilities to allow 
-stakeholders to segment performance dynamically.
-</p>
+    <h2>1️⃣ Data Modeling</h2>
+    <p>
+      Structured and modeled the dataset to enable scalable KPI tracking 
+      and consistent reporting logic across business metrics.
+    </p>
 
-<h3>4️⃣ Storytelling & Usability</h3>
-<p>
-Focused on clear labeling, consistent formatting, and intuitive navigation 
-to support fast executive-level interpretation.
-</p>
+    <h2>2️⃣ Dashboard Design</h2>
+    <p>
+      Designed a clean, executive-friendly layout using KPI cards, 
+      trend charts, and performance visuals to highlight insights quickly.
+    </p>
 
-<h2>📊 Results & Impact</h2>
-<ul>
-<li>Reduced manual spreadsheet workload</li>
-<li>Improved reporting speed and consistency</li>
-<li>Enabled real-time KPI monitoring</li>
-<li>Enhanced executive visibility into trends and performance</li>
-</ul>
+    <h2>3️⃣ Interactivity & Exploration</h2>
+    <p>
+      Implemented slicers, filters, and drill-down capabilities to allow 
+      stakeholders to segment performance dynamically.
+    </p>
 
-<h2>🎯 My Contribution</h2>
-<p>
-Led dashboard architecture and KPI framework design, ensuring 
-data consistency and stakeholder-aligned storytelling.
-</p>
+    <h2>4️⃣ Storytelling & Usability</h2>
+    <p>
+      Focused on clear labeling, consistent formatting, and intuitive navigation 
+      to support fast executive-level interpretation.
+    </p>
 
-<br>
-<a href="index.html" style="color:#00b4d8;">⬅ Back to Home</a>
+    <h2>📊 Results & Impact</h2>
+    <ul>
+      <li>Reduced manual spreadsheet workload</li>
+      <li>Improved reporting speed and consistency</li>
+      <li>Enabled real-time KPI monitoring</li>
+      <li>Enhanced executive visibility into trends and performance</li>
+    </ul>
+
+    <h2>🎯 My Contribution</h2>
+    <p>
+      Led dashboard architecture and KPI framework design, ensuring 
+      data consistency and stakeholder-aligned storytelling.
+    </p>
+
+    <!-- ✅ Footer Buttons -->
+    <div class="footer-actions">
+      <a class="btn" href="../projects.html">⬅ Back to Projects</a>
+      <a class="btn" href="../index.html">⬅ Back to Home</a>
+    </div>
+
+  </div>
+</div>
 
 </body>
 </html>
